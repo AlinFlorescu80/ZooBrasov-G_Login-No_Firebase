@@ -70,132 +70,30 @@
             android:layout_margin="20dp"
             android:background="@drawable/roundedprogram"
             android:padding="20dp"
+            android:visibility="visible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/Program">
 
+
             <TextView
-                android:id="@+id/orar1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="ORAR  1 martie – 30 septembrie"
-                android:textColor="@color/white"
-                android:textSize="20sp"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="true"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:text="@string/Program1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-
-                android:id="@+id/luni"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Luni – Închis"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/orar1" />
-
-
-            <TextView
-                android:id="@+id/marti"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Marţi – 09:00 – 19:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/luni" />
-
-
-            <TextView
-                android:id="@+id/miercuri"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Miercuri – 09:00 – 19:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/marti" />
-
-            <TextView
-                android:id="@+id/joi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Joi – 09:00 – 19:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/miercuri" />
-
-
-            <TextView
-                android:id="@+id/vineri"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Vineri – 09:00 – 19:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/joi" />
-
-
-            <TextView
-                android:id="@+id/sambata"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Sâmbătă – 09:00 – 19:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/vineri" />
-
-            <TextView
-                android:id="@+id/duminica"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Duminică – 09:00 – 19:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sambata" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-        <TextView
-            android:id="@+id/programx1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:layout_marginBottom="20dp"
-            android:justificationMode="inter_word"
-            android:text="Ultimele bilete se pun în vânzare la ora 18:15."
-            android:textColor="@color/teal_700"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toTopOf="@id/program1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/program2" />
-
-
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -203,111 +101,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/roundedprogram"
             android:padding="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/programx1">
+            app:layout_constraintTop_toBottomOf="@+id/program1">
+
 
             <TextView
-                android:id="@+id/orar2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="ORAR 1 octombrie – 28 februarie"
-                android:textColor="@color/white"
-                android:textSize="20sp"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="true"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:text="ORAR 1 octombrie - 28 februarie\n\nLuni - inchis\n\nMarti - 09:00 - 18:00\n\nMiercuri - 09:00 - 18:00\n\nJoi - 09:00 - 18:00\n\nVineri - 09:00 - 18:00\n\nSâmbătă - 09:00 - 18:00\n\nDuminică - 09:00 - 18:00"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-
-                android:id="@+id/lunix"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Luni – Închis"
-                android:textColor="@color/white"
-                android:layout_margin="10dp"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/orar2" />
-
-
-            <TextView
-                android:id="@+id/martix"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Marţi – 09:00 – 18:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/lunix" />
-
-
-            <TextView
-                android:id="@+id/miercurix"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Miercuri – 09:00 – 18:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/martix" />
-
-            <TextView
-                android:id="@+id/joix"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Joi – 09:00 – 18:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/miercurix" />
-
-
-            <TextView
-                android:id="@+id/vinerix"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Vineri – 09:00 – 18:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/joix" />
-
-
-            <TextView
-                android:id="@+id/sambatax"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Sâmbătă – 09:00 – 18:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/vinerix" />
-
-            <TextView
-                android:id="@+id/duminicax"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="Duminică – 09:00 – 18:00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sambatax" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
@@ -332,8 +149,9 @@
             android:id="@+id/bilete"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Prețuri bilete"
             android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Prețuri bilete"
             android:textColor="#0097A7"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -365,11 +183,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/roundedprogram"
             android:padding="20dp"
-            app:layout_constraintTop_toBottomOf="@id/preturix"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/preturix">
 
             <TextView
                 android:id="@+id/preturi1"
@@ -387,10 +206,10 @@
                 android:id="@+id/preturi2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:text="Copii peste 2 ani – 10 lei"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/preturi1" />
@@ -400,10 +219,10 @@
                 android:id="@+id/preturi3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:text="Elevi – 10 lei"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/preturi2" />
@@ -413,39 +232,36 @@
                 android:id="@+id/preturi4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:text="Studenţi – 10 lei"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/preturi3" />
-
-
 
 
             <TextView
                 android:id="@+id/preturi5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:text="Persoane în vârstă – 10 lei"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/preturi4" />
-
 
 
             <TextView
                 android:id="@+id/preturi6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:text="Copii 0 – 2 ani – intrare gratuită"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/preturi5" />
@@ -455,24 +271,23 @@
                 android:id="@+id/preturi7"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:text="Grupuri organizate adulţi – 17 lei"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/preturi6" />
-
 
 
             <TextView
                 android:id="@+id/preturi8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="10dp"
                 android:text="Grupuri organizate copii – 7 lei"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:layout_margin="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/preturi7" />
@@ -484,10 +299,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="50dp"
-            android:gravity="center"
-            android:layout_marginRight="50dp"
             android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
             android:layout_marginBottom="20dp"
+            android:gravity="center"
             android:justificationMode="inter_word"
             android:text="Contact"
             android:textColor="@color/teal_700"
@@ -496,7 +311,7 @@
             app:layout_constraintBottom_toTopOf="@id/contactcontainer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bilete2" />
+            app:layout_constraintTop_toBottomOf="@+id/bilete2" />
 
 
 

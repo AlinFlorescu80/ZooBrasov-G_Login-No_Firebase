@@ -113,6 +113,7 @@
                                 android:id="@+id/icon"
                                 android:layout_width="150dp"
                                 android:layout_height="100dp"
+                                android:clickable="true"
                                 android:src="@drawable/leuafrican"
                                 app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
                                 app:layout_constraintEnd_toEndOf="@+id/fixed_layout"

@@ -15,24 +15,24 @@
         android:background="#E2F0CB">
         >
 
-    <TextView
-        android:id="@+id/Titlu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:elevation="20dp"
-        android:gravity="center_vertical"
-        android:text="Zoo Brașov"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#0097A7"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        android:typeface="serif"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/Titlu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="20dp"
+            android:gravity="center_vertical"
+            android:text="Zoo Brașov"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#0097A7"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlCompat" />
 
 
     <TextView
@@ -144,5 +144,56 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/login"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Log in"
+            android:textColor="#0097A7"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/logout"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:text="Log out"
+            android:textColor="#0097A7"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/mail_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:icon="@android:drawable/ic_dialog_email"
+            app:iconGravity="textStart"
+            app:iconTint="#6DA6AD"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintEnd_toStartOf="@+id/Motto"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Titlu" />
+
+        <Button
+            android:id="@+id/site_button"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WWW"
+            android:textAlignment="textEnd"
+            android:textColor="#6DA6AD"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            app:layout_constraintStart_toEndOf="@+id/Motto"
+            app:layout_constraintTop_toTopOf="@+id/Motto" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

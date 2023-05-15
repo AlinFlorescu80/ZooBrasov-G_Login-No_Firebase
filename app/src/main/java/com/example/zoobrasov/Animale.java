@@ -242,6 +242,9 @@ public class Animale extends AppCompatActivity implements BottomNavigationView.O
 
 
         protected void onCreate(Bundle savedInstanceState) {
+
+
+
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_animale);
             bottomNavigationView = findViewById(R.id.bottomNavigationView2);
