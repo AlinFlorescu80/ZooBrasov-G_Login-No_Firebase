@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#5AA8AF"
+    android:background="#E2F0CB"
     tools:context=".Quiz">
 
 
@@ -20,6 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/intrebari"
 
         />
@@ -30,13 +31,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/layoutSelectat"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="197dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:text="This will be the question"
         android:textAlignment="center"
-        android:textColor="#E2F0CB"
+        android:textColor="#5AA8AF"
         android:textSize="24dp"
         android:textStyle="bold" />
 
@@ -114,11 +116,13 @@
         android:layout_below="@+id/layoutSelectat"
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
-        android:backgroundTint="#29CE6D"
+        android:backgroundTint="#5AA8AF"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:text="Trimite răspuns"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+
+        />
 
 
 
