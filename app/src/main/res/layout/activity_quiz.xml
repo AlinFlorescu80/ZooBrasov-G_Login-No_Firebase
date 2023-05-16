@@ -19,7 +19,7 @@
         android:text="@string/ntrebari_5"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/intrebari"
 
@@ -30,78 +30,71 @@
         android:id="@+id/intrebari"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/layoutSelectat"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/layoutSelectat"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="197dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="24dp"
+        android:autoText="false"
         android:text="This will be the question"
         android:textAlignment="center"
         android:textColor="#5AA8AF"
-        android:textSize="24dp"
+        android:textSize="22dp"
         android:textStyle="bold" />
 
-
-
     <LinearLayout
+        android:id="@+id/layoutSelectat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/layoutSelectat"
         android:layout_centerInParent="true"
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/rasp_A"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rasp_A"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="5dp"
             android:backgroundTint="#E8E8E8"
             android:text="raspuns A"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
         <Button
+            android:id="@+id/rasp_B"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rasp_B"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="5dp"
             android:backgroundTint="#E8E8E8"
             android:text="raspuns B"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
         <Button
+            android:id="@+id/rasp_C"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rasp_C"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="5dp"
             android:backgroundTint="#E8E8E8"
             android:text="raspuns C"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
         <Button
+            android:id="@+id/rasp_D"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rasp_D"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="5dp"
             android:backgroundTint="#E8E8E8"
             android:text="raspuns D"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
 
     </LinearLayout>
